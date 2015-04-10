@@ -1,0 +1,23 @@
+{
+  "name": "reveal-irontec",
+  "version": "0.0.0",
+  "authors": [
+    "Victor Vargas <victor@irontec.com>"
+  ],
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "reveal",
+    "irontec",
+    "theme"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
