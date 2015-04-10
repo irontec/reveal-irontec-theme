@@ -1,8 +1,11 @@
 {
-  "name": "reveal-irontec",
-  "version": "0.0.0",
+  "name": "reveal-irontec-theme",
+  "version": "1.0.0",
   "authors": [
     "Victor Vargas <victor@irontec.com>"
+  ],
+  "main": [
+    "css/styleDark.css"
   ],
   "moduleType": [
     "globals"
