@@ -1113,7 +1113,6 @@ footer {
  
  #irontec3D {
     margin: auto;
-/*  -webkit-transform: scale(0.7); */
 }
 
 .present .irontecName {
@@ -1123,21 +1122,28 @@ footer {
     height: 300px;
     
     -webkit-animation: backgroundName 8s;
+    -moz-animation: backgroundName 8s;
     animation: backgroundName 8s;
 }
 .present .sceneIrontec {
     -webkit-animation: sceneIrontec 8s;
+    -moz-animation: sceneIrontec 8s;
     animation: sceneIrontec 8s;
+    
     -webkit-transform: rotateX(-90deg) rotateY(0deg) rotateZ(-360deg) scale3d(0.18,0.18,0.18) translate3d(-1000px,0px,0px);
+    -moz-transform: rotateX(-90deg) rotateY(0deg) rotateZ(-360deg) scale3d(0.18,0.18,0.18) translate3d(-1000px,0px,0px);
+    transform: rotateX(-90deg) rotateY(0deg) rotateZ(-360deg) scale3d(0.18,0.18,0.18) translate3d(-1000px,0px,0px);
 }
 
 .present .cubitoId-1 {
     -webkit-animation: cuboIrontec 8s;
+    -moz-animation: cuboIrontec 8s;
     animation: cuboIrontec 8s;
 }
 
 .present .cilindro-1 {
     -webkit-animation: circleIrontec 8s;
+    -moz-animation: circleIrontec 8s;
     animation: circleIrontec 8s;
 }
 
