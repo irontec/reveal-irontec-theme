@@ -93,6 +93,10 @@ body {
 /*********************************************
  * NAVIGATION CONTROLS
  *********************************************/
+.reveal .controls {
+    z-index: 9999;
+    bottom: -5px;
+}
 .reveal .controls div.navigate-left,
 .reveal .controls div.navigate-left.enabled {
   border-right-color: rgb(127, 127, 127); }
@@ -125,10 +129,12 @@ body {
  * PROGRESS BAR
  *********************************************/
 .reveal .progress {
-  background: rgba(0, 0, 0, 0.2); }
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+}
 
 .reveal .progress span {
-  background: darkblue;
+  background: #b0232a;
   -webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   -moz-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   -ms-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
@@ -139,7 +145,7 @@ body {
  * SLIDE NUMBER
  *********************************************/
 .reveal .slide-number {
-  color: darkblue; 
+  color: darkblue;
  }
 
 /*********************************************
@@ -150,7 +156,7 @@ body {
     background: url(../img/logo_irontec_anagrama.svg) no-repeat bottom left;
     background-size: 40%;
 }
- 
+
 /*********************************************
  * FOOTER
  *********************************************/
