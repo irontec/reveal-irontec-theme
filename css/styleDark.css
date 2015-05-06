@@ -55,7 +55,7 @@ body {
  * LINKS
  *********************************************/
 .reveal a:not(.image) {
-  color: darkblue;
+  color: red;
   text-decoration: none;
   -webkit-transition: color .15s ease;
   -moz-transition: color .15s ease;
@@ -64,13 +64,13 @@ body {
   transition: color .15s ease; }
 
 .reveal a:not(.image):hover {
-  color: #0000f1;
+  color: red;
   text-shadow: none;
   border: none; }
 
 .reveal .roll span:after {
-  color: #fff;
-  background: #00003f; }
+  color: #000000;
+  background: #ffffff; }
 
 /*********************************************
  * IMAGES
