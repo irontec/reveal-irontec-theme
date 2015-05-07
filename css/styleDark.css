@@ -1,5 +1,46 @@
-@import url(https://fonts.googleapis.com/css?family=News+Cycle:400,700);
-@import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
+@font-face {
+    font-family: 'Lato';
+    src: url('lato/lato-black-webfont.eot');
+    src: url('lato/lato-black-webfont.eot?#iefix') format('embedded-opentype'), url('lato/lato-black-webfont.woff') format('woff'), url('lato/lato-black-webfont.ttf') format('truetype'), url('lato/lato-black-webfont.svg#latoblack') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Lato';
+    src: url('lato/lato-bold-webfont.eot');
+    src: url('lato/lato-bold-webfont.eot?#iefix') format('embedded-opentype'), url('lato/lato-bold-webfont.woff') format('woff'), url('lato/lato-bold-webfont.ttf') format('truetype'), url('lato/lato-bold-webfont.svg#latobold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Lato';
+    src: url('lato/lato-bolditalic-webfont.eot');
+    src: url('lato/lato-bolditalic-webfont.eot?#iefix') format('embedded-opentype'), url('lato/lato-bolditalic-webfont.woff') format('woff'), url('lato/lato-bolditalic-webfont.ttf') format('truetype'), url('lato/lato-bolditalic-webfont.svg#latobold_italic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Lato';
+    src: url('lato/lato-italic-webfont.eot');
+    src: url('lato/lato-italic-webfont.eot?#iefix') format('embedded-opentype'), url('lato/lato-italic-webfont.woff') format('woff'), url('lato/lato-italic-webfont.ttf') format('truetype'), url('lato/lato-italic-webfont.svg#latoitalic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Lato';
+    src: url('lato/lato-light-webfont.eot');
+    src: url('lato/lato-light-webfont.eot?#iefix') format('embedded-opentype'), url('lato/lato-light-webfont.woff') format('woff'), url('lato/lato-light-webfont.ttf') format('truetype'), url('lato/lato-light-webfont.svg#latolight') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Lato';
+    src: url('lato/lato-regular-webfont.eot');
+    src: url('lato/lato-regular-webfont.eot?#iefix') format('embedded-opentype'), url('lato/lato-regular-webfont.woff') format('woff'), url('lato/lato-regular-webfont.ttf') format('truetype'), url('lato/lato-regular-webfont.svg#latoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /**
  * A simple theme for reveal.js presentations, similar
  * to the default theme. The accent color is darkblue.
@@ -27,8 +68,8 @@ body {
 }
 
 ::selection {
-  color: white;
-  background: rgba(0, 0, 0, 0.99);
+  color: black;
+  background: rgba(255, 255, 255, 0.99);
   text-shadow: none; }
 
 /*********************************************
@@ -42,7 +83,7 @@ body {
 .reveal h6 {
   margin: 0 0 20px 0;
   color: white;
-  font-family: "News Cycle", Impact, sans-serif;
+  font-family: "Lato", Impact, sans-serif;
   line-height: 0.9em;
   letter-spacing: 0.02em;
   text-transform: none;
@@ -69,7 +110,7 @@ body {
   border: none; }
 
 .reveal .roll span:after {
-  color: #000000;
+  color: #000;
   background: #ffffff; }
 
 /*********************************************
@@ -145,8 +186,21 @@ body {
  * SLIDE NUMBER
  *********************************************/
 .reveal .slide-number {
-  color: darkblue; 
+  color: #ffffff; 
  }
+ 
+/*********************************************
+ * CODE
+ *********************************************/
+ .reveal pre code {
+  display: block;
+  padding: 5px;
+  overflow: auto;
+  max-height: 400px;
+  word-wrap: normal;
+  background: #3F3F3F;
+  color: #DCDCDC;
+}
 
 /*********************************************
  * Irontec
@@ -160,7 +214,7 @@ body {
 }
  
 .reveal {
-    height: 90%;
+    height: 98%;
     background: rgb(149,149,149);
     background: -moz-linear-gradient(top,  rgba(174,25,33,0.5) 0%, rgba(56,56,56,0.5) 23%, rgba(13,13,13,1) 46%, rgba(1,1,1,1) 50%, rgba(10,10,10,1) 53%, rgba(56,56,56,0.5) 75%, rgba(27,27,27,0) 100%);
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(174,25,33,0.5)), color-stop(23%,rgba(56,56,56,0.5)), color-stop(46%,rgba(13,13,13,1)), color-stop(50%,rgba(1,1,1,1)), color-stop(53%,rgba(10,10,10,1)), color-stop(75%,rgba(56,56,56,0.5)), color-stop(100%,rgba(27,27,27,0)));
@@ -1195,10 +1249,10 @@ footer {
        -webkit-transform: rotateX(45deg) rotateY(90deg) translate3d(-700px,0px,-150px);
     }
     50% {
-       -webkit-transform: rotateX(-90deg) rotateY(0deg) translate3d(0px,0px,0px); 
+       -webkit-transform: rotateX(-90deg) rotateY(0deg) scale3d(0.4,0.4,0.4) translate3d(0px,0px,0px); 
     }
     75% {
-       -webkit-transform: rotateX(-90deg) rotateY(0deg) rotateZ(0deg) scale3d(1,1,1) translate3d(0px,0px,0px); 
+       -webkit-transform: rotateX(-90deg) rotateY(0deg) rotateZ(0deg) scale3d(0.6,0.6,0.6) translate3d(0px,0px,0px); 
     }
     100% {
        -webkit-transform: rotateX(-90deg) rotateY(0deg) rotateZ(-360deg) scale3d(0.18,0.18,0.18) translate3d(-1000px,0px,0px);
@@ -1285,14 +1339,14 @@ footer {
        transform: rotateX(45deg) rotateY(90deg) translate3d(-700px,0px,-150px);
     }
     50% {
-       -moz-transform: rotateX(-90deg) rotateY(0deg) translate3d(0px,0px,0px);
-       -ms-transform: rotateX(-90deg) rotateY(0deg) translate3d(0px,0px,0px);
-       transform: rotateX(-90deg) rotateY(0deg) translate3d(0px,0px,0px);
+       -moz-transform: rotateX(-90deg) rotateY(0deg) scale3d(0.4,0.4,0.4) translate3d(0px,0px,0px);
+       -ms-transform: rotateX(-90deg) rotateY(0deg) scale3d(0.4,0.4,0.4) translate3d(0px,0px,0px);
+       transform: rotateX(-90deg) rotateY(0deg) scale3d(0.4,0.4,0.4) translate3d(0px,0px,0px);
     }
     75% {
-       -moz-transform: rotateX(-90deg) rotateY(0deg) rotateZ(0deg) scale3d(1,1,1) translate3d(0px,0px,0px);
-       -ms-transform: rotateX(-90deg) rotateY(0deg) rotateZ(0deg) scale3d(1,1,1) translate3d(0px,0px,0px);
-       transform: rotateX(-90deg) rotateY(0deg) rotateZ(0deg) scale3d(1,1,1) translate3d(0px,0px,0px);
+       -moz-transform: rotateX(-90deg) rotateY(0deg) rotateZ(0deg) scale3d(0.6,0.6,0.6) translate3d(0px,0px,0px);
+       -ms-transform: rotateX(-90deg) rotateY(0deg) rotateZ(0deg) scale3d(0.6,0.6,0.6) translate3d(0px,0px,0px);
+       transform: rotateX(-90deg) rotateY(0deg) rotateZ(0deg) scale3d(0.6,0.6,0.6) translate3d(0px,0px,0px);
     }
     100% {
        -moz-transform: rotateX(-90deg) rotateY(0deg) rotateZ(-360deg) scale3d(0.18,0.18,0.18) translate3d(-1000px,0px,0px);

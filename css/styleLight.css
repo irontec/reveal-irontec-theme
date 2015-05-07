@@ -142,6 +142,19 @@ body {
 .reveal .slide-number {
   color: darkblue; 
  }
+ 
+/*********************************************
+ * CODE
+ *********************************************/
+ .reveal pre code {
+  display: block;
+  padding: 5px;
+  overflow: auto;
+  max-height: 400px;
+  word-wrap: normal;
+  background: #3F3F3F;
+  color: #DCDCDC;
+}
 
 /*********************************************
  * Irontec
@@ -1178,10 +1191,10 @@ footer {
        -webkit-transform: rotateX(45deg) rotateY(90deg) translate3d(-700px,0px,-150px);
     }
     50% {
-       -webkit-transform: rotateX(-90deg) rotateY(0deg) translate3d(0px,0px,0px); 
+       -webkit-transform: rotateX(-90deg) rotateY(0deg) scale3d(0.4,0.4,0.4) translate3d(0px,0px,0px); 
     }
     75% {
-       -webkit-transform: rotateX(-90deg) rotateY(0deg) rotateZ(0deg) scale3d(1,1,1) translate3d(0px,0px,0px); 
+       -webkit-transform: rotateX(-90deg) rotateY(0deg) rotateZ(0deg) scale3d(0.6,0.6,0.6) translate3d(0px,0px,0px); 
     }
     100% {
        -webkit-transform: rotateX(-90deg) rotateY(0deg) rotateZ(-360deg) scale3d(0.18,0.18,0.18) translate3d(-1000px,0px,0px);
@@ -1268,14 +1281,14 @@ footer {
        transform: rotateX(45deg) rotateY(90deg) translate3d(-700px,0px,-150px);
     }
     50% {
-       -moz-transform: rotateX(-90deg) rotateY(0deg) translate3d(0px,0px,0px);
-       -ms-transform: rotateX(-90deg) rotateY(0deg) translate3d(0px,0px,0px);
-       transform: rotateX(-90deg) rotateY(0deg) translate3d(0px,0px,0px);
+       -moz-transform: rotateX(-90deg) rotateY(0deg) scale3d(0.4,0.4,0.4) translate3d(0px,0px,0px);
+       -ms-transform: rotateX(-90deg) rotateY(0deg) scale3d(0.4,0.4,0.4) translate3d(0px,0px,0px);
+       transform: rotateX(-90deg) rotateY(0deg) scale3d(0.4,0.4,0.4) translate3d(0px,0px,0px);
     }
     75% {
-       -moz-transform: rotateX(-90deg) rotateY(0deg) rotateZ(0deg) scale3d(1,1,1) translate3d(0px,0px,0px);
-       -ms-transform: rotateX(-90deg) rotateY(0deg) rotateZ(0deg) scale3d(1,1,1) translate3d(0px,0px,0px);
-       transform: rotateX(-90deg) rotateY(0deg) rotateZ(0deg) scale3d(1,1,1) translate3d(0px,0px,0px);
+       -moz-transform: rotateX(-90deg) rotateY(0deg) rotateZ(0deg) scale3d(0.6,0.6,0.6) translate3d(0px,0px,0px);
+       -ms-transform: rotateX(-90deg) rotateY(0deg) rotateZ(0deg) scale3d(0.6,0.6,0.6) translate3d(0px,0px,0px);
+       transform: rotateX(-90deg) rotateY(0deg) rotateZ(0deg) scale3d(0.6,0.6,0.6) translate3d(0px,0px,0px);
     }
     100% {
        -moz-transform: rotateX(-90deg) rotateY(0deg) rotateZ(-360deg) scale3d(0.18,0.18,0.18) translate3d(-1000px,0px,0px);
