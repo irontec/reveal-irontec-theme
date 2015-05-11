@@ -907,7 +907,7 @@ footer {
 /*  -webkit-transform: scale(0.7); */
 }
 
-.present > .irontecName {
+.present > #irontec3D .irontecName {
     position: absolute;
     background: url(../img/logo_irontec.png) no-repeat left center;
     width: 100%;
@@ -917,7 +917,7 @@ footer {
     -moz-animation: backgroundName 8s;
     animation: backgroundName 8s;
 }
-.present > .sceneIrontec {
+.present > #irontec3D .sceneIrontec {
     -webkit-animation: sceneIrontec 8s;
     -moz-animation: sceneIrontec 8s;
     animation: sceneIrontec 8s;
@@ -927,13 +927,13 @@ footer {
     transform: rotateX(-90deg) rotateY(0deg) rotateZ(-360deg) scale3d(0.18,0.18,0.18) translate3d(-1000px,0px,0px);
 }
 
-.present > .cubitoId-1 {
+.present > #irontec3D .cubitoId-1 {
     -webkit-animation: cuboIrontec 8s;
     -moz-animation: cuboIrontec 8s;
     animation: cuboIrontec 8s;
 }
 
-.present > .cilindro-1 {
+.present > #irontec3D .cilindro-1 {
     -webkit-animation: circleIrontec 8s;
     -moz-animation: circleIrontec 8s;
     animation: circleIrontec 8s;
