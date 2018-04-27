@@ -171,6 +171,23 @@ body {
     bottom: 45px;
 }
  
+.reveal code {
+  font-size: 32px;
+  color: green;
+}
+
+.reveal .slide-menu-button {
+  bottom: 10px!important;
+}
+
+.reveal .slide-menu-button a:not(.image) {
+  color: #b0232a;
+}
+
+.reveal .slide-menu-button a:not(.image):hover {
+  color: #b14348;
+}
+
 /*********************************************
  * FOOTER
  *********************************************/
