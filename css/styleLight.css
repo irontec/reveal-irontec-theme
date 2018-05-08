@@ -27,7 +27,7 @@ body {
 
 ::selection {
   color: white;
-  background: rgba(0, 0, 0, 0.99);
+  background: rgba(176, 35, 42, 0.99);
   text-shadow: none; }
 
 /*********************************************
@@ -47,14 +47,24 @@ body {
   text-transform: none;
   text-shadow: none; }
 
-.reveal h1 {
-  text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2); }
+  .reveal h1 {
+    text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
+    margin-top: 80px;}
+  
+  .reveal h3 {
+    color: #b0232a;
+    }
+  
+  .reveal h4 strong {
+    color: #b0232a;
+    font-style: italic;
+  }
 
 /*********************************************
  * LINKS
  *********************************************/
 .reveal a:not(.image) {
-  color: darkblue;
+  color: #b0232a;
   text-decoration: none;
   -webkit-transition: color .15s ease;
   -moz-transition: color .15s ease;
@@ -63,13 +73,40 @@ body {
   transition: color .15s ease; }
 
 .reveal a:not(.image):hover {
-  color: #0000f1;
+  color: #ce2e29;
   text-shadow: none;
   border: none; }
 
 .reveal .roll span:after {
   color: #fff;
   background: #00003f; }
+
+  /*********************************************
+  * LISTS
+  *********************************************/
+  .reveal li {
+    margin-bottom: 10px;}
+  
+  .reveal li ul li {
+    margin-bottom: 4px;}
+  
+  /*********************************************
+  * LISTS
+  *********************************************/
+  .reveal pre code {
+    max-height: 565px !important; }
+  
+  /*********************************************
+  * BLOCKQUOTE
+  *********************************************/
+  
+  .reveal blockquote {
+    width: 85%;
+    color: #b0232a;
+    box-shadow: none;
+    font-style: normal;
+    font-weight: bold;
+  }  
 
 /*********************************************
  * IMAGES
@@ -85,48 +122,56 @@ body {
   -o-transition: all .2s linear;
   transition: all .2s linear; }
 
-.reveal a:hover img {
-  background: rgba(255, 255, 255, 0.2);
-  border-color: darkblue;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.55); }
+  .reveal a:hover img {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: #b0232a;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.55); }
+  .reveal .span4 img {
+    box-shadow: none;
+  }
 
 /*********************************************
  * NAVIGATION CONTROLS
  *********************************************/
+
+ .reveal .controls {
+  color: #ce2e29;
+}
+ .reveal .controls div.navigate-left,
+ .reveal .controls div.navigate-left.enabled {
+   border-right-color: rgb(127, 127, 127); }
  
-.reveal .controls div.navigate-left,
-.reveal .controls div.navigate-left.enabled {
-  border-right-color: rgb(127, 127, 127); }
-
-.reveal .controls div.navigate-right,
-.reveal .controls div.navigate-right.enabled {
-  border-left-color: rgb(127, 127, 127); }
-
-.reveal .controls div.navigate-up,
-.reveal .controls div.navigate-up.enabled {
-  border-bottom-color: rgb(127, 127, 127); }
-
-.reveal .controls div.navigate-down,
-.reveal .controls div.navigate-down.enabled {
-  border-top-color: rgb(127, 127, 127); }
-
-.reveal .controls div.navigate-left.enabled:hover {
-  border-right-color: #B0232A; }
-
-.reveal .controls div.navigate-right.enabled:hover {
-  border-left-color: #B0232A; }
-
-.reveal .controls div.navigate-up.enabled:hover {
-  border-bottom-color: #B0232A; }
-
-.reveal .controls div.navigate-down.enabled:hover {
-  border-top-color: #B0232A; }
+ .reveal .controls div.navigate-right,
+ .reveal .controls div.navigate-right.enabled {
+   border-left-color: rgb(127, 127, 127); }
+ 
+ .reveal .controls div.navigate-up,
+ .reveal .controls div.navigate-up.enabled {
+   border-bottom-color: rgb(127, 127, 127); }
+ 
+ .reveal .controls div.navigate-down,
+ .reveal .controls div.navigate-down.enabled {
+   border-top-color: rgb(127, 127, 127); }
+ 
+ .reveal .controls div.navigate-left.enabled:hover {
+   border-right-color: #ce2e29; }
+ 
+ .reveal .controls div.navigate-right.enabled:hover {
+   border-left-color: #ce2e29; }
+ 
+ .reveal .controls div.navigate-up.enabled:hover {
+   border-bottom-color: #ce2e29; }
+ 
+ .reveal .controls div.navigate-down.enabled:hover {
+   border-top-color: #ce2e29; }
   
 /*********************************************
  * PROGRESS BAR
  *********************************************/
 .reveal .progress {
-  background: rgba(0, 0, 0, 0.2); }
+  background: rgba(0, 0, 0, 0.2); 
+  position: fixed;
+}
 
 .reveal .progress span {
   background: #b0232a;
@@ -140,7 +185,7 @@ body {
  * SLIDE NUMBER
  *********************************************/
 .reveal .slide-number {
-  color: darkblue; 
+  color: #b0232a; 
  }
  
 /*********************************************
